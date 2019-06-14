@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/cc042c3aeb.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>NYT - Article Search</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="jumbotron">NY Times Article Search</div>
+      <div id="search-params">
+        <div id="search-box">
+          <label for="search-term">Search Term:</label>
+          <input type="text" id="search-term" />
+          <button id="search"><i class="fab fa-searchengin"></i></button>
+        </div>
+        <div id="return-results-box">
+          <label for="record-count">Results:</label>
+          <select id="record-count">
+            <option value="1">1</option>
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+          </select>
+        </div>
+
+        <div id="button-box">
+          <button id="clear"><i class="fas fa-dumpster"></i></button>
+        </div>
+      </div>
+
+      <div id="results">Results</div>
+      <div id="search-results"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
+  </body>
+</html>
