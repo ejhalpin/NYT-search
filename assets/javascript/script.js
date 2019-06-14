@@ -77,6 +77,9 @@ $(document).ready(function() {
     var query = searchInput.val();
     doSearch(query);
   });
+  clearButton.on("click", function() {
+    resultsDiv.empty();
+  });
 });
 
 function dateFormat(date) {
